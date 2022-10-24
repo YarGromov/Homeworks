@@ -44,13 +44,13 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
         //
         // error && setError('')
         let value = e.currentTarget.value//.trim();
-        if (value !== ' ') {
+        //if (value !== ' ') {
             setName(value)
             setError('')
-        } else {
+        /*} else {
             setName('')
             setError('Name is require')
-        }
+        }*/
     }
     const addUser = () => {
         pureAddUser(name, setError, setName, addUserCallback)
