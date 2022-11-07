@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 import s from './Stand.module.css'
+import styles from './common/c2-SuperButton/SuperButton.module.css'
+
+
 import SuperInputText from './common/c1-SuperInputText/SuperInputText'
 import SuperCheckbox from './common/c3-SuperCheckbox/SuperCheckbox'
 import SuperButton from './common/c2-SuperButton/SuperButton'
@@ -44,7 +47,7 @@ const Stand = () => {
                 {/*обычная кнопка:*/}
                 <div>
                     <SuperButton id={'hw4-super-button-default'}
-                    className={s.default}
+                    className={styles.default}
                     >
                         default
                     </SuperButton>
@@ -68,7 +71,7 @@ const Stand = () => {
                 {/*задизэйбленная кнопка:*/}
                 <div>
                     <SuperButton
-                        className={s.secondary}
+                        className={styles.secondary}
                         id={'hw4-super-button-secondary'}
                         xType={'secondary'}
                     >
