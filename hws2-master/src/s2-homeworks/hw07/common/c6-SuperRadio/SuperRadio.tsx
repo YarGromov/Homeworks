@@ -20,7 +20,7 @@ type SuperRadioPropsType = Omit<DefaultRadioPropsType, 'type'> & {
     options?: any[]
     onChangeOption?: (option: any) => void
 
-    spanProps?: DefaultSpanPropsType // пропсы для спана
+    spanProps?: DefaultSpanPropsType
 }
 
 const SuperRadio: React.FC<SuperRadioPropsType> = ({
